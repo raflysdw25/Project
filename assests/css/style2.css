@@ -1,0 +1,137 @@
+/*SIGN UP CSS*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*Navigation*/
+
+
+#NavBar h1{
+	font-family: 'Shella Clean';
+	font-size: 55px;
+}
+
+#NavBar a{
+	padding: 30px 50px;
+	font-size: 40px;
+	color: #000;
+}
+
+#NavBar a:hover{
+	color: #5cb85c;
+	background-color: #fff;
+}
+
+
+/*myRegisterForm*/
+#myRegisterForm{
+	padding: 0 200px 0 200px;
+	padding-bottom: 10px;
+}
+
+#myRegisterForm h1{
+	font-family: 'Shella Clean';
+	font-size: 60px;
+}
+
+#myRegisterForm p{
+	padding-bottom: 30px;
+}
+
+/*Sign Up Form*/
+
+.signupForm{
+	display: flex;
+}
+
+.signupForm input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.signupForm input[type="email"], input[type="password"], input[type="text"]{
+	border:none;
+	border-bottom: 1px solid #000;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 15px;
+}
+
+.signupForm .glyphicon{
+	padding: 10px;
+    /*background: dodgerblue;*/
+    color: #000;
+    min-width: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#fullName input{
+	padding: 10px;
+	margin-right: 10px;
+}
+
+/*Button Daftar*/
+#myRegisterForm input[type="submit"]{
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	border:none;
+}
+
+#myRegisterForm input[type="submit"]:hover{
+	background-color:#00e676;
+	color: #000;
+}
+
+/*Footer*/
+footer{
+	padding: 5px;
+	position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+
+footer span{
+	font-family: 'Shella Clean';
+}
+
+@media (max-width:770px) {
+	#NavBar h1{
+		font-size: 40px;
+		text-align: justify;
+		float: left;
+	}
+	#NavBar a{
+		/* display: none; */
+		font-size: 30px;
+		float: right;
+		padding: 25px;
+	}
+
+	#myRegisterForm{
+		padding: 30px;
+	}
+
+	#myRegisterForm h1{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	#myRegisterForm p{
+		font-size: 12px;
+		padding-bottom: 0;
+		text-align: center;
+	}
+
+	#myRegisterForm .glyphicon{
+		display: none;
+	}
+}

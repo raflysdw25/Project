@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KopiIn | Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Kopiin">
+	<meta name="keyword" content="Kopiin, kopiin, KopiIn">
+	<meta name="author" content="iGroup, Innovation Group">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="assests/img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="assests/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar">
+			<form id="searchBar" class="navbar-form navbar-left" action="/action_page.php">
+				<div class="form-group">
+				    <input type="text" class="form-control" placeholder="Search..." name="search">
+				</div>
+				<button type="submit" class="btn glyphicon glyphicon-search"></button>
+			</form>
+			<div class="container-fluid">
+			    <ul id="NavBar" class="nav navbar-nav navbar-right">
+			      <li><a href="#">Home</a></li>
+			      <li><a href="#event-feed">Events</a></li>
+			      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Account <span class="caret"></span></a>
+
+					<ul class="dropdown-menu">
+						<li><a href="signup.html"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Sign Up</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myLogin"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Login</a></li>
+					</ul>
+
+			      </li>
+			    </ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div id="myLogin" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Login (Modal) -->
+				<div class="modal-content">
+					<div id="modalLogin" class="modal-body">
+					<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+					<!-- Form -->
+					<form action="login.php" method="post" role="form">
+						<h1 class="text-center">Login</h1>
+						<!-- Form Group -->
+						<div class="form-group form-group-lg">
+							<!-- <label for="email">Email Address</label> -->
+							<input type="email" class="" id="id" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<!-- <label for="password">Password</label> -->
+							<input type="password" class="" id="password" placeholder="Password">
+						</div>
+						<!-- Check Box -->
+						<div class="checkbox">
+							<label><input type="checkbox" name="">Biarkan tetap masuk</label>
+						</div>
+						<a href="#">Lupa Password ?</a>
+						<br>
+						<input type="submit" value="Masuk" class="btn btn-default">
+						<br>
+						<a href="signup.html">Belum mempunyai akun ? Daftar sekarang!</a>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="showcase" class="jumbotron">
+				<h1>Kopi.In</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="container">
+       <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+					            <div class="container">
+					                  <div class="row">
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                          <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo1.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					                        </div>
+					                      </div>
+
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                      	  <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo2.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                        </div>
+					                      </div>
+
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                          <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo3.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                        </div>
+					                      </div>
+					                  </div>
+					            </div>
+                            </div>
+                            <div class="item">
+					            <div class="container">
+					                  <div class="row">
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                          <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo1.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					                        </div>
+					                      </div>
+
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                      	  <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo2.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                        </div>
+					                      </div>
+
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                          <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo3.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                        </div>
+					                      </div>
+					                  </div>
+					            </div>
+                            </div>
+                            <div class="item">
+					            <div class="container">
+					                  <div class="row">
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                          <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo1.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					                        </div>
+					                      </div>
+
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                      	  <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo2.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                        </div>
+					                      </div>
+
+					                      <div class="col-sm-4">
+					                        <!-- Card Box -->
+					                        <div class="box">
+					                          <div class="picture-box">
+					                          	<img class="img-responsive" src="assests/img/diskominfo3.jpg" alt="Restoran Blalala">
+					                          </div>
+					                          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					                        </div>
+					                      </div>
+					                  </div>
+					            </div>
+                            </div>
+	                        <!-- Controls -->
+	                    <ul class="pager">
+		                    <li class="previous">
+			                    <a class="glyphicon glyphicon-chevron-left left" href="#carousel-example-generic" role="button" data-slide="prev">
+			                        <span class="text-center" aria-hidden="true"></span>
+			                        <span class="sr-only">Previous</span>
+			                	</a>
+		                    </li>
+		                    <li class="next">
+			                    <a class="glyphicon glyphicon-chevron-right right" href="#carousel-example-generic" role="button" data-slide="next">
+			                        <span class="text-center" aria-hidden="true"></span>
+			                        <span class="sr-only">Next</span>
+			                    </a>
+		                    </li>
+	                    </ul>
+                    </div>
+               	</div>
+            </div>
+        </div>
+<!-- Event -->
+		<div id="event-feed">
+			<h3 class="text-center" style="text-transform: uppercase; font-weight: bold;">events</h3>
+			<div class="col-sm-6 box-event">
+				<div class="upper-box">
+					<h5>Lorem Ipsum</h5>
+					<i class="glyphicon glyphicon-map-marker">Lorem Ipsum</i>
+					<br>
+					<i class="glyphicon glyphicon-time">Lorem Ipsum</i>
+				</div>
+				<img src="#" alt="event 0">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				<br>
+				<ul>
+					<li><a href="#" id="View">View</a></li>
+					<li><a href="#" id="Like"><i class="glyphicon glyphicon-thumbs-up"></i>Like</a></li>
+					<li><a href="#" id="Dislike"><i class="glyphicon glyphicon-thumbs-down"></i>Dislike</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 box-event">
+				<div class="upper-box">
+					<h5>Lorem Ipsum</h5>
+					<i class="glyphicon glyphicon-map-marker">Lorem Ipsum</i>
+					<br>
+					<i class="glyphicon glyphicon-time">Lorem Ipsum</i>
+				</div>
+				<img src="#" alt="event 1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				<br>
+				<ul>
+					<li><a href="#" id="View">View</a></li>
+					<li><a href="#" id="Like"><i class="glyphicon glyphicon-thumbs-up"></i>&nbsp;&nbsp;Like</a></li>
+					<li><a href="#" id="Dislike"><i class="glyphicon glyphicon-thumbs-down"></i>&nbsp;&nbsp;Dislike</a></li>
+				</ul>
+			</div>
+			<h4 class="text-center"><a href="#">Want to Know more events ? Click Here !</a></h4>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="closing-page">
+			<ul class=" nav navbar-nav">
+				<li><a href="" class="glyphicon glyphicon-home"></a></li>
+				<li><a href="" class="glyphicon glyphicon-earphone"></a></li>
+				<li><a href="" class="glyphicon glyphicon-envelope"></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<!-- <div style="height: 500px;"></div> -->
+
+
+
+	<footer class="text-center">
+		<p>iGroup - <span>Kopi.In</span>
+			<br>Copy Right &copy; 2018</p>
+	</footer>
+
+
+
+	<script></script>
+
+</body>
+</html>
