@@ -12,10 +12,157 @@
     <link rel="stylesheet" type="text/css" href="assests/css/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assests/addons/bootstrap-3.3.7/css/bootstrap.min.css"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- Menu Desktop -->
+          <nav class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=#NavBar>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="NavBar">
+                <form id="navbar-search" class="navbar-form navbar-left" action="/action_page.php">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search..." name="search">
+                  </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class=""><a href="index2.html">HOME</a></li>
+                  <li><a href="#eventSection">EVENTS</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ACCOUNT <span class="caret"></span></a>
+                    <ul id="account-dropdown" class="dropdown-menu">
+                      <li><a href="signup.html"><i class="glyphicon glyphicon-user"></i> Sign Up</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myLogin"><i class="glyphicon glyphicon-log-in"></i> Login</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <!-- Login Modals -->
+          <div class="container-fluid">
+            <div id="myLogin" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Login (Modal) -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                  </div>
+                  <div id="modalLogin" class="modal-body">
+                  <!-- Form -->
+                    <h1 class="text-center">Login</h1>
+                    <form action="login.php" method="post" role="form">
+                      <!-- Form Group -->
+                      <div class="form-group form-group-lg">
+                        <!-- <label for="email">Email Address</label> -->
+                        <input type="email" class="" id="id" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <!-- <label for="password">Password</label> -->
+                        <input class="" type="password" class="" id="password" placeholder="Password">
+                      </div>
+                      <!-- Check Box -->
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="">Biarkan tetap masuk</label>
+                      </div>
+                      <a href="#">Lupa Password ?</a>
+                      <br>
+                      <input type="submit" value="Masuk" class="btn btn-default">
+                      <br>
+                      <a href="signup.html">Belum mempunyai akun ? Daftar sekarang!</a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- Main page -->
+    <section id="pageSection">
+      <h1 class="text-center">Events</h1>
+      <div class="container">
+        <div class="row">
+          <a id="pageButton" href="#" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Tambah Kegiatan</a>
+          <div class="col-sm-12 eventboxes">
+            <div class="col-md-6">
+              <img src="assests/img/parallax9.jpeg" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div id="textEvent" class="col-md-6">
+              <h2>Event 1 - Penyelenggara 1</h2>
+              <h4>Tanggal : </h4>
+              <h4>Deskripsi</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p> Infomasi Lebih Lanjut :
+                <a href="#" class="btn btn-default">Klik Disini !</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 eventboxes">
+            <div class="col-md-6">
+              <img src="assests/img/parallax9.jpeg" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div id="textEvent" class="col-md-6">
+              <h2>Event 2 - Penyelenggara 2</h2>
+              <h4>Tanggal : </h4>
+              <h4>Deskripsi</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p> Infomasi Lebih Lanjut :
+                <a href="#" class="btn btn-default">Klik Disini !</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 eventboxes">
+            <div class="col-md-6">
+              <img src="assests/img/parallax9.jpeg" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div id="textEvent" class="col-md-6">
+              <h2>Event 3 - Penyelenggara 3</h2>
+              <h4>Tanggal : </h4>
+              <h4>Deskripsi</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p> Infomasi Lebih Lanjut :
+                <a href="#" class="btn btn-default">Klik Disini !</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 eventboxes">
+            <div class="col-md-6">
+              <img src="assests/img/parallax9.jpeg" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div id="textEvent" class="col-md-6">
+              <h2>Event 4 - Penyelenggara 4</h2>
+              <h4>Tanggal : </h4>
+              <h4>Deskripsi</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p> Infomasi Lebih Lanjut :
+                <a href="#" class="btn btn-default">Klik Disini !</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="footerSection">
+      <footer class="text-center">
+        <p>iGroup - <span>Kopi.In</span>
+          &copy; 2018 &nbsp;
+          <a href="#"><i class="fa fa-youtube-play"></i></a>
+          <a href="#"><i class="fa fa-facebook-official"></i></a>
+          <a href="#"><i class="fa fa-twitter-square"></i></a>
+          <a href="#"<i class="fa fa-instagram"></i></a>
+        </p>
+      </footer>
+    </section>
+
 
   </body>
 </html>

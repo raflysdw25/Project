@@ -40,11 +40,6 @@ body{
   padding: 0 15px 5px;
 }
 
-.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-    color: #fff;
-    background-color: #222;
-}
-
 #account-dropdown a:hover{
   color: #fff;
   background-color: #222;
@@ -193,6 +188,7 @@ body{
 
 #cafeSection h4 a, #eventSection h4 a{
   color: #000;
+  font-family: Jua, streetlgt, sans-serif;
 }
 
 #cafeSection .boxes , #eventSection .boxes {
@@ -206,6 +202,47 @@ body{
   text-align: justify;
 }
 
+/* eventpageSection & cafepageSection */
+#pageSection h1{
+  font-family: 'Jua', sans-serif;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+#pageSection .eventboxes{
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#pageSection .eventboxes img{
+  max-width: 450px;
+}
+
+#pageSection .eventboxes #textEvent h2{
+  font-family: 'Jua', sans-serif;
+  font-size: 40px;
+}
+
+#pageSection .eventboxes #textEvent h4{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#pageSection .eventboxes #textEvent p{
+  font-family: 'arial';
+  font-size: 16px;
+  text-align: justify;
+}
+
+#pageSection #pageButton{
+  margin-left: 32px;
+  margin-bottom: 10px;
+  /* background-color: #B36806; */
+  font-family: 'Jua', sans-serif;
+  color: #000;
+  font-size: 20px;
+}
 
 /*Modal Login*/
 .modal-content{
@@ -277,7 +314,7 @@ body{
 /*Footer*/
 #footerSection footer{
 	position: relative;
-  padding: 50px 0 10px 0;
+  padding: 20px 0 20px 0;
   background: #222;
   font-size: 18px;
   color: #fff;
@@ -369,6 +406,19 @@ body{
   #eventSection h4 a{
     font-size: 12px;
     color: #000;
+  }
+
+  /* eventpageSection */
+  #pageSection .eventboxes img{
+    max-width: 318px;
+  }
+
+  #pageSection .eventboxes #textEvent h2{
+    font-size: 26px;
+  }
+
+  #pageSection .eventboxes #textEvent h4{
+    font-size: 16px;
   }
 
   /* footerSection */
