@@ -17,7 +17,7 @@ body{
   margin:0;
   padding: 0;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Noto Serif', serif;
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
@@ -170,51 +170,42 @@ body{
 	color: #000;
 }
 
-/* eventSection */
+/* cafeSection & eventSection */
 
-#cafeSection .boxes a{
+#cafeSection .boxes a, #eventSection .boxes a{
   color: #000;
 }
 
-#cafeSection .boxes a:hover{
+#cafeSection .boxes a:hover, #eventSection .boxes a:hover{
   color: #C27108;
 }
 
-#cafeSection h2{
+#cafeSection h2, #eventSection h2{
   margin-bottom: 35px;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
-  font-family: 'streetlgt';
+  font-family: Jua , streetlgt, sans-serif;
 }
 
-#cafeSection .boxes img{
-  /* max-width: 300px; */
+#cafeSection h1, #eventSection h1{
+  font-family: Jua, streetlgt, sans-serif;
 }
 
-#cafeSection .boxes{
+#cafeSection h4 a, #eventSection h4 a{
+  color: #000;
+}
+
+#cafeSection .boxes , #eventSection .boxes {
+  font-family: 'Noto Serif', serif;
+}
+
+#cafeSection .boxes, #eventSection .boxes{
   padding: 20px;
   box-sizing: border-box;
-  /* border: 2px solid #000;
-  border-radius: 10px; */
   max-width: 450px;
   text-align: justify;
 }
 
-/*Footer*/
-footer{
-	padding: 5px;
-	position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-    font-size: 15px;
-}
-
-footer span{
-	font-family: 'Shella Clean';
-}
 
 /*Modal Login*/
 .modal-content{
@@ -229,14 +220,15 @@ footer span{
 	transform: translate(-50%,0%);
 }
 
-.modal-content h1{
+.modal-body h1{
 	font-family: 'Shella Clean';
-	font-size: 40px;
-	color: #795548\
+	font-size: 60px;
+	color: #795548;
 }
 
 .modal-body{
-	margin: 40px;
+	padding: 0 100px 20px 100px;
+  margin: 0 35px;
 }
 
 
@@ -278,6 +270,26 @@ footer span{
 	cursor: pointer;
 	background: #00e676;
 	color: #000;
+  font-weight: bold;
+}
+
+
+/*Footer*/
+#footerSection footer{
+	position: relative;
+  padding: 50px 0 10px 0;
+  background: #222;
+  font-size: 18px;
+  color: #fff;
+}
+
+#footerSection footer a{
+  color: #fff;
+  margin-right: 5px;
+}
+
+#footerSection footer span{
+	font-family: 'Shella Clean';
 }
 
 
@@ -285,12 +297,14 @@ footer span{
 @media(max-width: 770px){
   /* Global */
   #NavBarSignUP .glyphicon{
-    display: none;
+    margin-right: 20px;
   }
 
-  #NavBarSignUP .textHome{
-    visibility: visible;
+  #account-dropdown li a{
+    font-weight: bold;
   }
+
+
   /* Carousel Mobile */
   #myCarousel .carousel-caption h1{
     font-size: 45px;
@@ -312,6 +326,12 @@ footer span{
     width: 80%;
 
   }
+
+  .modal-body{
+    margin:0;
+    padding:10px;
+  }
+
   #modalLogin a{
     font-size: 12px;
   }
@@ -334,5 +354,26 @@ footer span{
 
   #myRegisterForm .glyphicon{
     display: none;
+  }
+
+  /* cafeSection */
+  #cafeSection h4 a{
+    font-size: 12px;
+    color: #000;
+  }
+
+  /* eventSection */
+  #eventSection{
+    margin-bottom: 20px;
+  }
+  #eventSection h4 a{
+    font-size: 12px;
+    color: #000;
+  }
+
+  /* footerSection */
+  #footerSection footer{
+    font-size: 14px;
+    padding: 20px 0 10px 0;
   }
 }
