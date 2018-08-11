@@ -202,6 +202,54 @@ body{
   text-align: justify;
 }
 
+/* profileSection */
+#profileCarousel .carousel-caption h1{
+  font-family: 'Jua', sans-serif;
+  font-size: 100px;
+}
+
+#profileCarousel .carousel-caption h4{
+  font-size: 38px;
+}
+
+#profileCarousel .carousel-caption p, #profileCarousel .carousel-caption p a {
+  font-size: 30px;
+  font-family: 'Noto Serif', serif;
+  color: #000;
+}
+
+
+#profileSection h2{
+  margin-bottom: 35px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Jua , streetlgt, sans-serif;
+}
+
+#profileSection h1{
+  font-family: Jua, streetlgt, sans-serif;
+}
+
+#profileSection h4{
+  font-size: 16px;
+}
+
+#profileSection .boxes p{
+  font-family: 'Noto Serif', serif;
+}
+
+
+#profileSection .boxes{
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+#profileSection #editButton{
+  font-family: 'Jua', sans-serif;
+  font-size: 20px;
+}
+
 /* eventpageSection & cafepageSection */
 #pageSection h1{
   font-family: 'Jua', sans-serif;
@@ -419,6 +467,11 @@ body{
 
   #pageSection .eventboxes #textEvent h4{
     font-size: 16px;
+  }
+
+  /* profileCarousel */
+  #profileCarousel .carousel-caption p, #profileCarousel .carousel-caption p a {
+    visibility: hidden;
   }
 
   /* footerSection */
